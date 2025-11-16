@@ -1,11 +1,13 @@
+AHK forum post:
+
 [size=150][color=#BF0000]How to find the value of a Windows API constant[/color][/size]
 
 When reviewing other users' code and browsing the forums, we often come across something like this:
 
 [code]
-OnMessage(0x0200, Callback, 1)
+OnMessage(0x0200, Callback, 1) ; WM_MOUSEMOVE
 Callback(wParam, lParam, msg, hwnd) {
-	if wParam = 0x0001 { ; MK_LBUTTON
+    if wParam = 0x0001 { ; MK_LBUTTON
         ; code
     }
     return 0
@@ -18,31 +20,27 @@ Then, one day we come across something like [url]https://learn.microsoft.com/en-
 
 This guide is a short, step-by-step guide to help you find any Windows API constant value from the header files on your own machine.
 
-I'm not sure why the images aren't displaying, but you can view the guide with images from the repository:
-
-https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/tree/main
-
 [size=150][color=#BF0000]Steps[/color][/size]
 
 [list=1][*]If you have not already, download and install [url=https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=visualstudio]Visual Studio[/url] (NOT Visual Studio Code).
 [list=a][*]When you get to Step 4 - Choose Workloads - install the Desktop development with C++ workload, among any other workloads you are interested in.[/list]
 [*]After Visual Studio is installed, launch Visual Studio.
 [list][*]If you are presented with the Visual Studio Installer, click Launch. If not, continue to the next step.
-[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/visual-studio-installer.png[/img][/list]
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/visual-studio-installer.png[/img][/list]
 [*]You should now be looking at the Get Started interface. Click Create a new project.
-[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/create-a-new-project.png[/img]
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/create-a-new-project.png[/img]
 [*]Find the Windows Desktop Application option, then click on it and click Next.
-[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/windows-desktop-application.png[/img]
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/windows-desktop-application.png[/img]
 [*]Change any details or leave them the default, then click Create.
-[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/create.png[/img]
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/create.png[/img]
 [*]After the project is created and everything loads, either press the keyboard shortcut Ctrl+Shift+F, or click Edit > Find and Replace > Find in Files.
-[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/find-in-files.png[/img]
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/find-in-files.png[/img]
 [*]Input the search term, i.e. the constant's name, change the Look in dropdown to All Visual C++ Directories, then use one of the Find options at the bottom.
-[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/find.png[/img]
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/find.png[/img]
 [*]If you selected Find Previous or Find Next, you will typically see the constant definition in the header file, something like the below image. If the constant's name is found inside the name of something else, you might have to click Find Previous / Find Next a few more times until you find the actual definition.
-[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/find-result.png[/img]
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/find-result.png[/img]
 [*]If you select Find All, then review the results until you find something like "#define <symbol name> <symbol value>", then click on that.
-[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/find-all-result.png[/img][/list]
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/find-all-result.png[/img][/list]
 
 There you have it! Super easy and now you can write AHK code like a pro.
 
