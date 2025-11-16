@@ -24,20 +24,20 @@ This guide is a short, step-by-step guide to help you find any Windows API const
   - When you get to Step 4 - Choose Workloads - install the Desktop development with C++ workload, among any other workloads you are interested in.
 2. After Visual Studio is installed, launch Visual Studio.
  - If you are presented with the Visual Studio Installer, click Launch. If not, continue to the next step.
-   [visual studio installer](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/visual-studio-installer.png)
+   [visual studio installer](images/visual-studio-installer.png)
 3. You should now be looking at the Get Started interface. Click Create a new project.
-   [create a new project](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/create-a-new-project.png)
+   [create a new project](images/create-a-new-project.png)
 4. Find the Windows Desktop Application option, then click on it and click Next.
-   [windows desktop application](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/windows-desktop-application.png)
+   [windows desktop application](images/windows-desktop-application.png)
 5. Change any details or leave them the default, then click Create.
-   [create](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/create.png)
+   [create](images/create.png)
 6. After the project is created and everything loads, either press the keyboard shortcut Ctrl+Shift+F, or click Edit > Find and Replace > Find in Files.
-   [find in files](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/find-in-files.png)
+   [find in files](images/find-in-files.png)
 7. Input the search term, i.e. the constant's name, change the Look in dropdown to All Visual C++ Directories, then use one of the Find options at the bottom.
-   [find](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/find.png)
+   [find](images/find.png)
 8. If you selected Find Previous or Find Next, you will typically see the constant definition in the header file, something like the below image. If the constant's name is found inside the name of something else, you might have to click Find Previous / Find Next a few more times until you find the actual definition.
-   [find result](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/find-result.png)
+   [find result](images/find-result.png)
 9. If you select Find All, then review the results until you find something like "#define &lt;symbol name> &lt;symbol value>", then click on that.
-   [find all result](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/find-all-result.png)
+   [find all result](images/find-all-result.png)
 
 There you have it! Super easy and now you can write AHK code like a pro.
