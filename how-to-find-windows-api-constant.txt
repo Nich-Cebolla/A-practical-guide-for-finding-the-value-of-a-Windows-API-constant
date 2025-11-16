@@ -53,4 +53,4 @@ Sometimes we just want to open a specific header file and review its contents. T
 [list=1][*]Type `#include "<name>.h"` anywhere in the file.
 [img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/type-include.png[/img]
 [*]Hold down Ctrl and left-click on the text you just typed. The mouse pointer should change form to indicate that it is hovering over interactible content. The header file will open automatically.
-[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/new-tab.png[/img]
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/new-tab.png[/img][/list]
