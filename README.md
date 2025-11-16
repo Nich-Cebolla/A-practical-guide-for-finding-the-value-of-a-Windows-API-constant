@@ -14,7 +14,7 @@ Callback(wParam, lParam, msg, hwnd) {
 
 But rarely do we see an explanation for where the values  `0x0200` and  `0x0001` come from. We learn eventually that we can go to [learn.microsoft.com](https://learn.microsoft.com/) and search for some of these, and we feel a great boost in confidence at our newfound skills and opportunities.
 
-Then, one day we come across something like https://learn.microsoft.com/en-us/windows/win32/controls/static-control-styles and to our dismay, the values are not listed! Microsoft seems to have forsaken the noob and expects its platform developers to know where to get these values, or, more specifically, to know that they can refer to the values by name. However, we are coding in AHK, and so we are not able to refer to the values by name.
+Then, one day we come across something like https://learn.microsoft.com/en-us/windows/win32/controls/static-control-styles and to our dismay, the values are not listed! Microsoft seems to have forsaken the noob and expects its platform developers to know where to get these values, or, more likely, to know that they can refer to the values by name. However, we are coding in AHK, and so we are not able to refer to the values by name.
 
 This guide is a short, step-by-step guide to help you find any Windows API constant value from the header files on your own machine.
 

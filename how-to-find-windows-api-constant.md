@@ -20,7 +20,7 @@ This guide is a short, step-by-step guide to help you find any Windows API const
 
 View this guide with images included from the repository: [https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/tree/main](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/tree/main)
 
-View this guide with images included from AutoHotkey forums: [https://www.autohotkey.com/boards/viewtopic.php?f=96&t=139549](https://www.autohotkey.com/boards/viewtopic.php?f=96&t=139549)
+View this guide with images included from the AutoHotkey forums: [https://www.autohotkey.com/boards/viewtopic.php?f=96&t=139549](https://www.autohotkey.com/boards/viewtopic.php?f=96&t=139549)
 
 # Steps
 
