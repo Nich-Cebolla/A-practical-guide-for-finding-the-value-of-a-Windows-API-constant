@@ -45,3 +45,12 @@ There you have it! Super easy and now you can write AHK code like a pro.
 Submit pull requests & corrections for this guide to this repository:
 
 https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/tree/main
+
+[size=150][color=#BF0000]Bonus guide - finding a specific header file[/color][/size]
+
+Sometimes we just want to open a specific header file and review its contents. This is very easy. Start from step 6 above (you should have the project open to an editable file).
+
+[list=1][*]Type `#include "<name>.h"` anywhere in the file.
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/type-include.png[/img]
+[*]Hold down Ctrl and left-click on the text you just typed. The mouse pointer should change form to indicate that it is hovering over interactible content. The header file will open automatically.
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/new-tab.png[/img]

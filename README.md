@@ -41,3 +41,12 @@ This guide is a short, step-by-step guide to help you find any Windows API const
    ![find all result](images/find-all-result.png)
 
 There you have it! Super easy and now you can write AHK code like a pro.
+
+# Bonus guide - finding a specific header file
+
+Sometimes we just want to open a specific header file and review its contents. This is very easy. Start from step 6 above (you should have the project open to an editable file).
+
+1. Type `#include "<name>.h"` anywhere in the file.
+   ![type include](images/type-include.png)
+2. Hold down Ctrl and left-click on the text you just typed. The mouse pointer should change form to indicate that it is hovering over interactible content. The header file will open automatically.
+   ![new tab](images/new-tab.png)

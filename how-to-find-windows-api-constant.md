@@ -35,3 +35,12 @@ View this guide with images included from the AutoHotkey forums: [https://www.au
 9. If you select Find All, then review the results until you find something like "#define &lt;symbol name> &lt;symbol value>", then click on that. [image - find all result](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/find-all-result.png)
 
 There you have it! Super easy and now you can write AHK code like a pro.
+
+# Bonus guide - finding a specific header file
+
+Sometimes we just want to open a specific header file and review its contents. This is very easy. Start from step 6 above (you should have the project open to an editable file).
+
+1. Type `#include "<name>.h"` anywhere in the file.
+   [image - type include](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/type-include.png)
+2. Hold down Ctrl and left-click on the text you just typed. The mouse pointer should change form to indicate that it is hovering over interactible content. The header file will open automatically.
+   [image - new tab](https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/raw/main/images/new-tab.png)
