@@ -1,0 +1,27 @@
+[size=150][color=#BF0000]How to find the value of a Windows API constant[/color][/size]
+
+When reviewing other users' code and browsing the forums, we often come across something like this:
+
+[code]
+OnMessage(0x0200, Callback, 1)
+Callback(wParam, lParam, msg, hwnd) {
+	if wParam = 0x0001 { ; MK_LBUTTON
+        ; code
+    }
+    return 0
+}
+[/code]
+
+But rarely do we see an explanation for where the values [c]0x0200[/c] and [c]0x0001[/c] come from. We learn eventually that we can go to [url]learn.microsoft.com[/url] and search for some of these, and we feel a great boost in confidence at our newfound skills and opportunities.
+
+Then, one day we come across something like [url]https://learn.microsoft.com/en-us/windows/win32/controls/static-control-styles[/url] and to our dismay, the values are not listed! Microsoft seems to have forsaken the noob and expects its platform developers to know where to get these values, or, more specifically, to know that they can refer to the values by name. However, we are coding in AHK, and so we are not able to refer to the values by name.
+
+This guide is a short, step-by-step guide to help you find any Windows API constant value from the header files on your own machine.
+
+[size=150][color=#BF0000]Steps[/color][/size]
+
+[list=1][*]If you have not already, download and install [url=https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=visualstudio]Visual Studio[/url] (NOT Visual Studio Code).
+[list=a][*]When you get to Step 4 - Choose Workloads - install the Desktop development with C++ workload, among any other workloads you are interested in.[/list]
+[*]After Visual Studio is installed, launch Visual Studio. You will either be presented with the Visual Studio Installer, or the
+
+2.
