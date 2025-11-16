@@ -18,6 +18,10 @@ Then, one day we come across something like [url]https://learn.microsoft.com/en-
 
 This guide is a short, step-by-step guide to help you find any Windows API constant value from the header files on your own machine.
 
+I'm not sure why the images aren't displaying, but you can view the guide with images from the repository:
+
+https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/tree/main
+
 [size=150][color=#BF0000]Steps[/color][/size]
 
 [list=1][*]If you have not already, download and install [url=https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=visualstudio]Visual Studio[/url] (NOT Visual Studio Code).
