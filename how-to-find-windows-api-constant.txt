@@ -22,6 +22,13 @@ This guide is a short, step-by-step guide to help you find any Windows API const
 
 [list=1][*]If you have not already, download and install [url=https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=visualstudio]Visual Studio[/url] (NOT Visual Studio Code).
 [list=a][*]When you get to Step 4 - Choose Workloads - install the Desktop development with C++ workload, among any other workloads you are interested in.[/list]
-[*]After Visual Studio is installed, launch Visual Studio. You will either be presented with the Visual Studio Installer, or the
+[*]After Visual Studio is installed, launch Visual Studio.
+[list][*]If you are presented with the Visual Studio Installer, click Launch. If not, continue to the next step.
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/visual-studio-installer.png[/img][/list]
+[*]You should now be looking at the Get Started interface. Click Create a new project.
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/create-a-new-project.png[/img]
+[*]Change any details or leave them the default, then click Create.
+[img]https://github.com/Nich-Cebolla/A-practical-guide-for-finding-the-value-of-a-Windows-API-constant/blob/main/images/create.png[/img]
+[*]Find the Windows Desktop Application option, then click on it and click Next.
 
 2.
