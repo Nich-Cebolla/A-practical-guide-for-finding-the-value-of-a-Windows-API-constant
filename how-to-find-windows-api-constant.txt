@@ -1,5 +1,3 @@
-AHK forum post:
-
 [size=150][color=#BF0000]How to find the value of a Windows API constant[/color][/size]
 
 When reviewing other users' code and browsing the forums, we often come across something like this:
